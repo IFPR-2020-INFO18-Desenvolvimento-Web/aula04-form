@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulários</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <h1>Formulários</h1>
+  
+  <form>
+    <div class="campo">
+      <label for="nome">Nome: </label>
+      <input type="text" name="nome" id="nome" placeholder="Informe seu nominho">  
+    </div>
+    
+    <div class="campo">
+      <label for="cidade">Cidade: </label>
+      <input type="text" name="cidade" id="cidade" value="Paranaguá">  
+    </div>
+
+    <div class="campo">
+      <label for="email">Email: </label>
+      <input type="email" name="email" id="email">  
+    </div>
+
+    <div class="campo">
+      <label for="idade">Idade: </label>
+      <input type="number" name="idade" id="idade">  
+    </div>
+
+    <div class="campo">
+      <label for="senha">Senha: </label>
+      <input type="password" name="senha" id="senha">  
+    </div>
+
+    <div class="campo">
+      <div>Qual seu estilo musical favorito?</div>
+      <div class="opcao">
+        <input type="radio" name="musica" id="musica_rock" value="rock">
+        <label for="musica_rock">Rock</label>
+      </div>
+      <div class="opcao">
+        <input type="radio" name="musica" id="musica_sertanejo" value="sertanejo">
+        <label for="musica_sertanejo">Sertanejo</label>
+      </div>
+      <div class="opcao">
+        <input type="radio" name="musica" id="musica_eletronica" value="eletronica">
+        <label for="musica_eletronica">Eletrônica</label>
+      </div>
+      <div class="opcao">
+        <input type="radio" name="musica" id="musica_nenhuma" value="" checked>
+        <label for="musica_nenhuma">Nenhuma dessas aí!</label>
+      </div>
+    </div>
+
+    <div class="campo">
+      <div>Em qual estação você é mais feliz?</div>
+      <div class="opcao">
+        <input type="radio" name="estacao" value="verao" id="estacao_verao">
+        <label for="estacao_verao">Verão</label>
+      </div>
+      <div class="opcao">
+        <input type="radio" name="estacao" value="outono" id="estacao_outono">
+        <label for="estacao_outono">Outono</label>
+      </div>
+      <div class="opcao">
+        <input type="radio" name="estacao" value="inverno" id="estacao_inverno" checked>
+        <label for="estacao_inverno">Inverno</label>
+      </div>
+      <div class="opcao">
+        <input type="radio" name="estacao" value="primavera" id="estacao_primavera">
+        <label for="estacao_primavera">Primavera</label>
+      </div>
+    </div>
+
+    <div class="campo">
+      <input type="checkbox" name="pgua" id="pgua" value="sim" checked>
+      <label for="pgua">Você mora em Paranaguá?</label>
+    </div>
+
+    <div class="campo">
+      <input type="checkbox" name="praia" id="praia" value="sim">
+      <label for="praia">Você já morou na praia?</label>
+    </div>
+
+    <div class="campo">
+      <label for="marca">Qual a marca do seu carro?</label>
+      <select name="marca" id="marca">
+        <option value="" selected>Selecione uma marca</option>
+        <optgroup label="Boas">
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </optgroup>
+        <optgroup label="Menos Boas">
+          <option value="chevrolet">Chevrolet</option>
+          <option value="fiat">Fiat</option>
+        </optgroup>
+      </select>
+    </div>
+
+    <div class="campo">
+      <label for="observacoes">Observações</label>
+      <textarea name="observacoes" id="observacoes">Digite aqui!</textarea>
+    </div>
+
+    <input type="submit" value="Registrar">
+    <button type="submit">
+      <img src="imagens/submit.png">
+    </button>
+    <button type="reset">
+      <img src="imagens/reset.png">
+    </button>
+
+  </form>
+
+</body>
+</html>
